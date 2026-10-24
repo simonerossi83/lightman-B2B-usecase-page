@@ -10,6 +10,14 @@ Aprire `dist/index.html` nel browser oppure avviare un server locale:
 python3 -m http.server 8000 --directory dist
 ```
 
+## Pubblicazione su GitHub Pages
+
+Il workflow `.github/workflows/deploy-pages.yml` pubblica il contenuto di `dist/` a ogni push sul branch `main`, dopo il controllo della sintassi JavaScript. Non è richiesta una compilazione.
+
+Per pubblicare un aggiornamento, salvare le modifiche in un commit e inviarle con `git push origin main`. L’esito è consultabile nella scheda **Actions** del repository, nel workflow **Deploy GitHub Pages**. Il workflow può essere avviato anche manualmente con **Run workflow**.
+
+La sorgente di pubblicazione in **Settings → Pages** deve essere **GitHub Actions**. Viene pubblicata soltanto la cartella `dist/`; la visibilità del repository rimane invariata.
+
 ## Struttura
 
 - `dist/index.html`: struttura della pagina, template delle card e dialog condiviso.
