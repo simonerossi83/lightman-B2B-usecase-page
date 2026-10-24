@@ -56,7 +56,8 @@ function renderProject(project) {
   image.alt = project.coverAlt;
   image.width = 1920;
   image.height = 1080;
-  cover.append(image, element('figcaption', '', project.imageCaption));
+  cover.append(image);
+  if (project.imageCaption) cover.append(element('figcaption', '', project.imageCaption));
 
   const body = element('div', 'project-body');
   const heading = element('header', 'project-heading');
@@ -71,7 +72,8 @@ function renderProject(project) {
     group.append(element('dt', '', label), element('dd', '', value));
     facts.append(group);
   });
-  body.append(heading, facts, element('p', 'content-note', project.contentNote));
+  body.append(heading, facts);
+  if (project.contentNote) body.append(element('p', 'content-note', project.contentNote));
   body.append(
     createSection('01', 'Il contesto', project.context),
     createSection('02', 'La personalizzazione', project.customization),

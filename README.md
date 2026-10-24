@@ -32,9 +32,15 @@ Modificare gli oggetti nell’array `caseStudies` in `dist/case-studies.js`. Man
 
 I campi `title`, `eventType`, `shortDescription`, `coverImage` e `coverAlt` alimentano sia le card sia le modali. `client` e `audience` compaiono nella scheda; `context`, `customization` ed `execution` sono array di paragrafi per le tre sezioni editoriali. `imageCaption` esplicita la provenienza della copertina; `contentNote` segnala lo stato della documentazione.
 
-I nomi e i brief sintetici sono ripresi dalla landing originale. **Le schede sono da completare** con cliente e settore, pubblico, formato e luogo dell’evento, vincoli, scelte artistiche e tecniche, svolgimento e risultati documentabili. I paragrafi “Da completare” sono placeholder, non un resoconto di attività già accertate.
+La scheda **Salesforce World Tour** è compilata con il contesto fornito dal cliente: apertura della convention all’Allianz MiCo di Milano, 15 ballerine, 3.000 spettatori in plenaria e 1.500 utenti in streaming, laser volumetrici e video su schermi di oltre 30 metri. Le note `imageCaption` e `contentNote` sono facoltative: quando vuote, non vengono mostrate.
 
-Le quattro copertine riutilizzano fotografie d’archivio del repository: la loro associazione ai singoli eventi non è verificata. In particolare la foto di `LED Wall + Performer` non documenta un LED wall ed è un segnaposto esplicito. Sostituire le copertine con foto verificate e aggiornare `coverAlt`, `imageCaption`, `contentNote` e la nota generale in `index.html` quando i contenuti sono completi.
+La scheda **Mirror Dance** è compilata con il contesto fornito dal cliente: inaugurazione di una concessionaria CUPRA, accoglienza itinerante in abiti specchiati durante il buffet aperitivo del pomeriggio e danza serale sul palco con riflessi delle luci sugli abiti.
+
+La scheda **25 anni di storia** è compilata con il contesto fornito dal cliente: anniversario di un’azienda elettronica, accoglienza con trampolieri, robot LED, logo aziendale in uno spettacolo con ologrammi, fontane Sparkular e fumo basso per il taglio torta, laser show durante la discoteca.
+
+La scheda **LED Wall + Performer** è compilata con il contesto fornito dal cliente: congresso Novo Nordisk a Roma, fornitura delle ballerine, coreografia creata in coordinamento con l’agenzia del LED wall e con il team video, mesi di studio per l’interazione fra movimenti e immagini. La ricerca pubblica non ha identificato con certezza titolo e numero di partecipanti dell’evento: questi dati sono omessi.
+
+Le quattro copertine riutilizzano fotografie d’archivio del repository: la loro associazione ai singoli eventi non è verificata. In particolare la foto di `LED Wall + Performer` è illustrativa e non mostra un LED wall. Quando si inseriscono fotografie dei progetti, aggiornare anche `coverAlt` e l’eventuale `imageCaption`.
 
 ## Accessibilità e comportamento
 

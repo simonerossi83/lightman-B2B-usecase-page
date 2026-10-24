@@ -1,106 +1,105 @@
 /*
  * Unica fonte dei contenuti di card e approfondimenti.
- * I riferimenti ai progetti provengono dalla landing originale.
- * I passaggi "Da completare" sono placeholder editoriali, non fatti accertati.
- * Sostituire coverImage, coverAlt e imageCaption con materiale del progetto
- * verificato; aggiornare contentNote quando la scheda è documentata.
+ * I testi delle quattro schede si basano sui brief forniti dal cliente.
+ * coverImage e coverAlt definiscono la copertina e la descrizione accessibile.
+ * imageCaption e contentNote sono facoltativi: se vuoti, non vengono mostrati.
  * context, customization ed execution sono array di paragrafi.
  */
 const caseStudies = [
   {
     id: 'salesforce',
-    title: 'Salesforce',
-    eventType: 'Brand experience',
-    client: 'Salesforce · riferimento presente nella pagina originale',
-    audience: 'Da completare: pubblico e tipologia di partecipanti.',
+    title: 'Salesforce World Tour',
+    eventType: 'Apertura convention',
+    client: 'Salesforce',
+    audience: '3.000 spettatori in sala plenaria e 1.500 utenti in diretta streaming.',
     coverImage: 'assets/video-luce.webp',
     coverAlt: 'Gruppo di performer con costumi LED e ali luminose multicolore.',
-    imageCaption: 'Immagine d’archivio Lightman. Associazione al progetto Salesforce da verificare.',
-    shortDescription: 'L’identità del brand come punto di partenza per un LED Dance Show.',
-    contentNote: 'Scheda da completare. Sono ripresi solo il nome, il brief sintetico e il linguaggio artistico presenti nella pagina originale. I dettagli di produzione non sono ancora documentati.',
+    imageCaption: '',
+    shortDescription: '15 ballerine, laser volumetrici e video su schermi di oltre 30 metri per l’apertura della convention a Milano.',
+    contentNote: '',
     context: [
-      'La pagina originale associa a Salesforce un brief di brand experience: dare forma visiva al tema dell’innovazione del brand.',
-      'Da completare: settore e ruolo del committente, formato dell’evento, luogo, pubblico, tempi e vincoli del brief.'
+      'All’Allianz MiCo di Milano abbiamo realizzato lo show di apertura della convention principale del Salesforce World Tour. Il pubblico comprendeva 3.000 spettatori in sala plenaria e 1.500 utenti collegati in diretta streaming.',
+      'Lo spettacolo doveva integrare un corpo di ballo di 15 ballerine, effetti laser volumetrici e contributi video su schermi di oltre 30 metri. Il vincolo produttivo era far convergere questi elementi in una sequenza precisa, nel rispetto dei tempi congressuali.'
     ],
     customization: [
-      'Il linguaggio indicato è un LED Dance Show personalizzato per rappresentare l’identità del brand sulla scena.',
-      'Da completare: contenuti visivi effettivamente realizzati, riferimenti al brand, scelte musicali e coreografiche, adattamenti tecnici.'
+      'Il coreografo e il team tecnico hanno lavorato a stretto contatto con la regia del cliente. La coreografia è stata progettata insieme agli effetti laser e ai contributi video, mettendo in relazione i movimenti delle performer con ciò che accadeva sugli schermi.',
+      'La sincronizzazione al centesimo di secondo ha guidato la costruzione dello show: ogni intervento artistico e tecnico doveva inserirsi nella stessa sequenza e nei tempi previsti dal programma della convention.'
     ],
     execution: [
-      'Da completare con il resoconto della produzione: sviluppo dei contenuti, prove, coordinamento con la regia e svolgimento dello show.',
-      'Non sono disponibili informazioni verificate sulle criticità affrontate o sui risultati dell’evento.'
+      'Le 15 ballerine hanno aperto la convention principale davanti alla platea della plenaria e al pubblico collegato in streaming. La regia ha coordinato la performance dal vivo, i laser volumetrici e i video sugli schermi di oltre 30 metri.',
+      'Il lavoro condiviso tra coreografo, team tecnico e regia del cliente ha permesso di eseguire lo show con la sincronizzazione prevista, rispettando i tempi congressuali.'
     ]
   },
   {
     id: '25-anni-di-storia',
     title: '25 anni di storia',
     eventType: 'Anniversario aziendale',
-    client: 'Da completare: azienda e settore.',
-    audience: 'Da completare: destinatari dell’anniversario.',
+    client: 'Azienda del settore elettronico',
+    audience: 'Ospiti dell’anniversario aziendale.',
     coverImage: 'assets/laser.webp',
     coverAlt: 'Fasci laser verdi e blu sopra il pubblico in una sala eventi.',
-    imageCaption: 'Immagine d’archivio Lightman. Associazione all’anniversario da verificare.',
-    shortDescription: 'Un racconto aziendale attraverso Laser Show e Tech Ballet.',
-    contentNote: 'Scheda da completare. Il riferimento ai 25 anni e ai linguaggi dello spettacolo proviene dalla pagina originale. Cliente e dettagli dell’evento non sono indicati.',
+    imageCaption: '',
+    shortDescription: 'Un programma di intrattenimento per i 25 anni di un’azienda elettronica, dall’accoglienza al taglio torta e alla discoteca.',
+    contentNote: '',
     context: [
-      'Il progetto è presentato nella pagina originale con il titolo “25 Anni di Storia”. Il brief sintetico riguarda il racconto di una storia aziendale attraverso lo spettacolo.',
-      'Da completare: identità e settore dell’azienda, occasione dell’anniversario, pubblico, materiali di partenza e vincoli produttivi.'
+      'Per i 25 anni di un’azienda del settore elettronico abbiamo gestito l’intrattenimento e gli effetti scenici dell’anniversario, dall’accoglienza degli ospiti al taglio della torta, fino al momento discoteca.',
+      'Accoglienza, presentazione del logo aziendale, celebrazione e ballo richiedevano interventi distinti, coordinati all’interno dello stesso programma.'
     ],
     customization: [
-      'La scheda di partenza indica l’abbinamento di Laser Show e Tech Ballet come linguaggio per lo storytelling aziendale.',
-      'Da completare: episodi della storia selezionati, struttura del racconto, contributi musicali, contenuti laser e rapporto con la coreografia.'
+      'Il logo dell’azienda è stato inserito in uno spettacolo con ologrammi. Per il taglio della torta abbiamo abbinato fontane Sparkular e macchine del fumo basso, dedicando a questo passaggio una composizione di effetti scenici.',
+      'Il programma comprendeva inoltre trampolieri per l’accoglienza, robot LED e un laser show durante la discoteca. Artisti ed effetti sono stati distribuiti nei diversi momenti dell’anniversario.'
     ],
     execution: [
-      'Da completare: lavorazione dei materiali aziendali, sviluppo della sequenza scenica, prove e coordinamento tecnico durante l’evento.',
-      'L’archivio del progetto non contiene ancora un resoconto verificato dell’esecuzione o dei risultati.'
+      'I trampolieri hanno accolto gli ospiti all’arrivo. Nel corso dell’evento sono intervenuti i robot LED e lo spettacolo con ologrammi ha mostrato il logo aziendale.',
+      'Il taglio della torta è stato accompagnato dalle fontane Sparkular e dal fumo basso. Durante il successivo momento discoteca, il laser show ha completato il programma di intrattenimento.'
     ]
   },
   {
     id: 'mirror-dance',
     title: 'Mirror Dance',
-    eventType: 'Evento in location · luxury',
-    client: 'Da completare: committente e settore.',
-    audience: 'Da completare: ospiti e modalità di fruizione.',
+    eventType: 'Inaugurazione concessionaria',
+    client: 'Concessionaria CUPRA · settore automotive',
+    audience: 'Ospiti dell’inaugurazione, dal buffet aperitivo allo spettacolo serale.',
     coverImage: 'assets/mirror.webp',
     coverAlt: 'Performer in costumi a specchio su un palco, sotto luci bianche e blu.',
-    imageCaption: 'Immagine d’archivio Lightman. Associazione a questo specifico progetto da verificare.',
-    shortDescription: 'Una performance pensata in relazione all’architettura della location.',
-    contentNote: 'Scheda da completare. La relazione fra performance e location è indicata nella pagina originale; cliente, luogo e scelte esecutive sono da documentare.',
+    imageCaption: '',
+    shortDescription: 'Accoglienza itinerante e danza sul palco in abiti specchiati per l’inaugurazione di una concessionaria CUPRA.',
+    contentNote: '',
     context: [
-      'La pagina originale colloca Mirror Dance nell’ambito degli eventi luxury. Il brief riportato è valorizzare la location rispettandone il carattere architettonico.',
-      'Da completare: cliente e settore, tipo di evento, caratteristiche degli spazi, pubblico ed eventuali vincoli di allestimento.'
+      'Per l’inaugurazione di una concessionaria CUPRA abbiamo realizzato una performance articolata in due momenti: l’accoglienza degli ospiti durante il buffet aperitivo del pomeriggio e una danza sul palcoscenico alla sera.',
+      'L’intervento accompagnava così due situazioni diverse dello stesso evento: un momento conviviale, con i performer in movimento tra gli ospiti, e uno spettacolo sul palco.'
     ],
     customization: [
-      'Il riferimento di partenza è una Mirror Dance concepita per dialogare con l’architettura della location.',
-      'Da completare: scelta delle aree di esibizione, movimenti e percorsi dei performer, illuminazione, musica e adattamenti alla presenza degli ospiti.'
+      'Gli abiti interamente specchiati sono stati l’elemento comune ai due interventi. Nel pomeriggio, la forma itinerante permetteva ai performer di accogliere gli ospiti durante l’aperitivo; per la sera, la performance assumeva la forma di una danza su palcoscenico.',
+      'Sul palco, le superfici specchiate degli abiti riflettevano le luci di scena. Il movimento dei performer diventava così anche un movimento di riflessi, integrando il costume nel disegno visivo dello spettacolo.'
     ],
     execution: [
-      'Da completare: sopralluogo, preparazione degli spazi, prove nella location e inserimento della performance nella sequenza dell’evento.',
-      'Le soluzioni adottate sul posto e gli esiti della produzione non sono ancora documentati.'
+      'Durante il pomeriggio, i performer in abiti specchiati hanno accolto gli ospiti con un intervento itinerante negli spazi del buffet aperitivo.',
+      'Alla sera, la danza si è svolta sul palcoscenico. Le luci del palco, riflettendosi sugli abiti durante i movimenti, hanno creato il gioco di luce che caratterizzava la performance.'
     ]
   },
   {
     id: 'led-wall-performer',
     title: 'LED Wall + Performer',
-    eventType: 'Spettacolo a regia integrata',
-    client: 'Da completare: committente e settore.',
-    audience: 'Da completare: pubblico e contesto dell’evento.',
+    eventType: 'Performance per congresso · Roma',
+    client: 'Novo Nordisk · settore farmaceutico',
+    audience: 'Partecipanti al congresso di Roma.',
     coverImage: 'assets/video-esclusivi.webp',
     coverAlt: 'Performer con grandi ali illuminate su un palco.',
-    imageCaption: 'Immagine d’archivio Lightman, segnaposto. La foto non documenta il LED wall del progetto.',
-    shortDescription: 'Contenuti su schermo e presenza dei ballerini all’interno della stessa regia.',
-    contentNote: 'Scheda da completare. L’interazione fra ballerini e schermo è descritta nella pagina originale. La copertina è un segnaposto da sostituire con un’immagine del progetto.',
+    imageCaption: '',
+    shortDescription: 'Una coreografia in dialogo con i contenuti del LED wall, sviluppata per un congresso Novo Nordisk a Roma.',
+    contentNote: '',
     context: [
-      'Il brief riportato nella pagina originale riguarda l’incontro fra scena digitale e presenza fisica, attraverso l’interazione di ballerini e LED wall.',
-      'Da completare: committente, settore, tipo di evento, pubblico, dimensioni della scena e vincoli del sistema video.'
+      'Per un congresso Novo Nordisk a Roma, il cliente ha richiesto una coreografia in cui le ballerine interagissero con i contenuti di un LED wall.',
+      'La realizzazione coinvolgeva più gruppi di lavoro: la nostra parte artistica, l’agenzia che forniva lo schermo e il team incaricato di sviluppare il video. La difficoltà era far coincidere i movimenti delle ballerine con la sequenza delle immagini.'
     ],
     customization: [
-      'La scheda esistente descrive ballerini e schermo coordinati all’interno di un’unica regia.',
-      'Da completare: contenuti video realizzati, passaggi coreografici, modalità di sincronizzazione e adattamenti alle misure del palco e dello schermo.'
+      'Abbiamo fornito le ballerine e creato una coreografia specifica per l’interazione con il LED wall. Il lavoro è stato sviluppato in coordinamento con l’agenzia che forniva lo schermo e con il team autore dei contributi video.',
+      'Lo studio dei movimenti è proceduto insieme a quello delle immagini: la coreografia doveva corrispondere a ciò che appariva sullo schermo, sia nei tempi sia nelle posizioni delle performer.'
     ],
     execution: [
-      'Da completare: preparazione dei contenuti, prove di interazione con lo schermo, gestione dei segnali di regia e svolgimento della performance.',
-      'Non sono ancora disponibili dettagli verificati sulle criticità tecniche risolte o sull’esito dell’evento.'
+      'La preparazione ha richiesto mesi di studio e coordinamento tra coreografia, contenuti video e fornitura del LED wall. Il lavoro si è concentrato sulla precisione dei gesti e sulla loro corrispondenza con le immagini.',
+      'Durante il congresso, le ballerine hanno eseguito la coreografia interagendo con il video sul LED wall. Gesti e posizioni studiati al millimetro hanno dato continuità tra i movimenti sul palco e ciò che accadeva sullo schermo.'
     ]
   }
 ];
