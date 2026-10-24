@@ -1,0 +1,10 @@
+const booking=document.querySelector('#booking');
+const video=null;
+let trigger=null;
+function show(dialog,button){trigger=button;dialog.showModal();}
+function close(dialog){dialog.close();if(dialog===video)document.querySelector('#video-container').replaceChildren();trigger?.focus();}
+document.querySelectorAll('[data-book]').forEach(button=>button.addEventListener('click',()=>show(booking,button)));
+document.querySelectorAll('dialog .close').forEach(button=>button.addEventListener('click',()=>close(button.closest('dialog'))));
+document.querySelectorAll('dialog').forEach(dialog=>{dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)close(dialog);}});dialog.addEventListener('close',()=>{if(dialog===video)document.querySelector('#video-container').replaceChildren();});});
+document.querySelectorAll('[data-video]').forEach(button=>button.addEventListener('click',()=>{document.querySelector('#video-title').textContent=button.dataset.title;const iframe=document.createElement('iframe');iframe.src='https://www.youtube-nocookie.com/embed/'+button.dataset.video+'?autoplay=1&rel=0';iframe.title=button.dataset.title;iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';iframe.allowFullscreen=true;document.querySelector('#video-container').replaceChildren(iframe);show(video,button);}));
+document.querySelector('#brief-form').addEventListener('submit',event=>{event.preventDefault();const data=new FormData(event.target);const body='Ciao Lightman,\n\nvorrei organizzare un confronto di 15 minuti su un brief in sviluppo.\n\nNome e agenzia: '+data.get('name')+'\nQuando preferirei sentirci: '+(data.get('when')||'Da concordare')+'\n\nIl progetto:\n'+(data.get('brief')||'Ne parliamo insieme.')+'\n\nGrazie!';const target='mailto:info@lightman.it?subject='+encodeURIComponent('Confronto di 15 minuti sul nostro brief')+'&body='+encodeURIComponent(body);document.querySelector('#email-fallback').hidden=false;window.location.href=target;});
