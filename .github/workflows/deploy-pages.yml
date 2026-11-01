@@ -33,6 +33,9 @@ jobs:
           test -f dist/index.html
           node --check dist/case-studies.js
           node --check dist/app.js
+          node --check dist/contact-config.js
+          node --check dist/contact.js
+          node --test tests/*.test.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

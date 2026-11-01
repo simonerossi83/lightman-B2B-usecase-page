@@ -1,0 +1,3 @@
+# Modern publishable API keys are checked by handler.mjs before processing mail.
+[functions.portfolio-contact]
+verify_jwt = false

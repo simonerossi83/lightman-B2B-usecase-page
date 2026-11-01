@@ -8,8 +8,10 @@
   <meta name="theme-color" content="#111210">
   <title>Progetti e produzioni | Lightman Digital Show</title>
   <link rel="stylesheet" href="style.css">
+  <script src="contact-config.js" defer></script>
   <script src="case-studies.js" defer></script>
   <script src="app.js" defer></script>
+  <script src="contact.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#progetti">Vai ai progetti</a>
@@ -17,9 +19,11 @@
     <a class="brand" href="https://lightman.it/" aria-label="Lightman Digital Show, sito ufficiale">
       <img src="assets/logo.png" alt="Lightman Digital Show" width="160" height="60">
     </a>
+    <a class="site-link" href="https://lightman.it/">Visita lightman.it <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main class="page-width" id="inizio">
+  <main id="inizio">
+    <div class="page-width">
     <section class="intro" aria-labelledby="page-title">
       <h1 id="page-title">Progetti e<br>produzioni</h1>
       <p>Quattro progetti, quattro contesti diversi.<br> Dalle richieste iniziali alla realizzazione dello spettacolo.</p>
@@ -33,11 +37,84 @@
       <div class="case-grid" id="case-grid"></div>
       <noscript><p class="fallback-note">Per consultare i quattro progetti e i relativi approfondimenti, abilita JavaScript nel browser.</p></noscript>
     </section>
+
+    <section class="brief-cta" aria-labelledby="brief-title">
+      <div>
+        <h2 id="brief-title">Il tuo evento ha un altro brief.<br>Partiamo da quello.</h2>
+        <a class="cta-button" href="#contatti">Confrontiamoci sul tuo evento <span aria-hidden="true">↗</span></a>
+      </div>
+      <p>Hai già un obiettivo o un momento da valorizzare? Possiamo confrontarci sulla direzione artistica e visiva da sviluppare.</p>
+    </section>
+    </div>
+
+  <section class="process-section" aria-labelledby="process-title">
+    <div class="page-width section-grid">
+      <div class="section-intro">
+        <p class="eyebrow">Dall’idea alla messa in scena</p>
+        <h2 id="process-title">Creatività da proporre.<br><span>Produzione da pianificare.</span></h2>
+        <p class="section-copy">La tua agenzia guida l’evento e il rapporto con il cliente. Un referente Lightman segue la nostra componente artistica e visiva, coordinandosi con la squadra già coinvolta.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <h3>Mettiamo a fuoco il brief.</h3>
+          <p>Messaggio, pubblico, spazi, tempi e fascia di investimento orientano la direzione creativa.</p>
+        </li>
+        <li>
+          <h3>Definiamo proposta e costi.</h3>
+          <p>Concordiamo prestazioni incluse, requisiti, responsabilità e costi prima della produzione. Eventuali variazioni vengono valutate e approvate prima di essere realizzate.</p>
+        </li>
+        <li>
+          <h3>Prepariamo e gestiamo il nostro intervento.</h3>
+          <p>Coordiniamo prove e messa in scena con regia, team video e fornitori tecnici. Il service audio e luci dell’evento è in carico all’agenzia o alla location.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contatti" aria-labelledby="contact-title">
+    <div class="page-width section-grid">
+      <div class="section-intro">
+        <p class="eyebrow">Il prossimo progetto</p>
+        <h2 id="contact-title">Un progetto definito o un’idea iniziale?<br><span>Possiamo partire da entrambi.</span></h2>
+        <p class="section-copy">Raccontaci che evento stai preparando e cosa vuoi far vivere agli ospiti. Nel primo confronto mettiamo a fuoco obiettivi e vincoli, valutiamo dove possiamo contribuire e concordiamo il passo successivo. Non serve avere già tutte le risposte.</p>
+        <div class="contact-details">
+          <a class="phone-link" href="tel:+393462201020">346 220 1020 <span aria-hidden="true">↗</span></a>
+          <p>Parla con David Fassoli</p>
+          <a class="email-link" href="mailto:info@lightman.it">info@lightman.it <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" aria-labelledby="form-title" aria-describedby="form-note">
+        <h3 id="form-title">Partiamo da poche righe.</h3>
+        <div class="form-field">
+          <label for="contact-name">Nome e agenzia <span>(facoltativo)</span></label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="160" placeholder="Come possiamo chiamarti">
+        </div>
+        <div class="form-field">
+          <label for="contact-email">La tua email</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="nome@agenzia.it" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-project">Il tuo progetto</label>
+          <textarea id="contact-project" name="project" rows="6" minlength="10" maxlength="6000" placeholder="Che evento stai preparando? Quale messaggio o momento vuoi valorizzare? Aggiungi data, location e fascia di budget solo se già disponibili." required></textarea>
+        </div>
+        <div class="form-trap" aria-hidden="true" inert>
+          <label for="contact-website">Lascia vuoto questo campo</label>
+          <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="cta-button" type="submit" disabled><span class="submit-label">Invia il progetto a David</span><span aria-hidden="true">↗</span></button>
+        <p class="form-note" id="form-note">Il messaggio viene inviato direttamente a info@lightman.it. Useremo i tuoi recapiti per rispondere alla richiesta.</p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p class="form-note">Per inviare il modulo abilita JavaScript, oppure contattaci al 346 220 1020 o a info@lightman.it.</p></noscript>
+      </form>
+    </div>
+  </section>
+
   </main>
 
   <footer class="footer page-width">
     <span>Lightman Digital Show</span>
     <div class="footer-contacts">
+      <a href="https://lightman.it/">Scopri il mondo Lightman <span aria-hidden="true">↗</span></a>
       <a href="tel:+393462201020">346 220 1020</a>
       <a href="mailto:info@lightman.it">info@lightman.it</a>
     </div>
